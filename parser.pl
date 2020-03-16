@@ -16,4 +16,21 @@ Parser pensado para un lenguaje imperativo simple, en el que se dispone de:
 
 Los bloques deben escribirse entre llaves ({}), y las lineas deben finalizar con ';'.
 
+Ejemplo:
+
+parse([
+    '{',
+        x, =, 1, ;,
+        y, =, 10, ;,
+        while, '(', x, <=, y, ')', '{',
+            x, =, '(', x, +, 1, ')', ;,
+        '}', ;,
+        if, '(', x, or, y, ')', '{',
+            x, =, 1, ;,
+        '}', else, '{',
+            x, =, 2, ;,
+        '}', ;,
+    '}'
+]).
+
 */
